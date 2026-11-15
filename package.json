@@ -1,0 +1,12 @@
+{
+  "name": "wonderfully-made-reflexology",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Wonderfully Made Reflexology (wonderfully-made.org) hosted on Google Firebase Hosting",
+  "scripts": {
+    "start": "npx --yes serve public -l 5000",
+    "dev": "python3 -m http.server 5000 --directory public",
+    "firebase:emulate": "npx --yes firebase-tools serve --only hosting --port 5000",
+    "firebase:deploy": "npx --yes firebase-tools deploy --only hosting"
+  }
+}
